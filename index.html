@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel=""preconnect" href="https://fonts.googleapis.com">
+    <link rel=""preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@400;600;700& display=swap" rel= "stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;;
+        }
+
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(18,18,62);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin:  23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color:red
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+        .left:hover{
+            color: cyan;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+        }
+
+        .firstSection > div{
+            width: 30%; 
+        }
+
+        .leftSection{
+            font-size: 3rem;
+        }
+        .rightSection img{
+            width: 80%;
+        }
+
+        .c1{
+            color: rgb(170,107,228);
+        }
+
+        #element{
+            color: rgb(170,107,228);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.5px;
+            margin: 40px 84px;
+        }
+
+        .secondSection h1{
+            font-size: 1.8rem;
+        }
+        .secondSection h1:hover{
+            color: aqua;
+        }
+        .c2{
+            color: gray;
+        }
+
+        .secondSection .box{
+            background: white;
+            width: 60vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 200px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image{
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 180px;
+            width: 150px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 185px;
+            width: 150px;
+            color: gray;
+            font-size: 15px;
+            
+        }
+        footer{
+            background-color: #0e0e1a;
+        }
+
+        .footer{
+            display: flex;
+            padding: 20px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 220px;
+        }
+
+        footer .c3{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+           
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background-color: purple;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        footer .second ul:hover{
+            color: red;
+        }
+
+        footer .third ul:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Harsh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a onclick="window.location.href='about.html';"><i class="fa fa-address-card"></i> About</a></li>
+                    <li><a href="/"><i class="fas fa-bars"></i> Services</a></li>
+                    <li><a onclick="window.location.href='contact.html';"><i class="fas fa-phone"></i> Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="c1">Harshdeep Singh</span>
+                <div>My Skills are</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button onclick="window.location.href='https://drive.google.com/file/d/1OdxcScxibnFcud-11mvCJvlJz9e03oxK/view?usp=drive_link';" class="btn">Download Resume</button>
+                    <button onclick="window.location.href='https://github.com/harsh8603deep';"class="btn">Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image.png" alt=""
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <span class="c2">What I have done so far</span>
+            <h1>Education Qualifcation!</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image" src="10th.png" alt="">
+                    <div class="vertical-title">
+                        Xth (2019)
+                    </div>
+                    <div class="vertical-desc">
+                        (CBSE) 75%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image" src="12th.jpeg" alt="">
+                    <div class="vertical-title">
+                        XIIth (2021)
+                    </div>
+                    <div class="vertical-desc">
+                        (CBSE) 85.5%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image" src="btech.jpeg" alt="">
+                    <div class="vertical-title">
+                        B-TECH (2021-current)
+                    </div>
+                    <div class="vertical-desc">
+                        7.5 sgpa
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Harshdeep Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+            <div class="c3">
+                Copyright &#169; harshsportfolio.com | All rights reserverd
+            </div>
+       
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['HTML', 'CSS', 'JavaScript', 'Python', 'React js'],
+          typeSpeed: 30,
+        });
+      </script>
+</body>
+</html>
